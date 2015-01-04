@@ -1,0 +1,32 @@
+{
+  "name": "forloop",
+  "version": "0.0.1",
+  "description": "for ( ; ; ) loop for long async tasks",
+  "homepage": "https://github.com/palanik",
+  "keywords": [
+    "forloop",
+    "for",
+    "loop"
+  ],
+  "author": "N. Palani Kumanan",
+  "contributors": [
+    "N. Palani Kumanan"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/palanik/forloop.git"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "registry" : "https://registry.npmjs.org"
+  },
+  "dependencies": {},
+  "devDependencies": {
+  },
+  "scripts": {
+  },
+  "main": "index",
+  "engines": {
+    "node": ">= 0.4.0"
+  }
+}
