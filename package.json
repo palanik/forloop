@@ -1,13 +1,16 @@
 {
   "name": "forloop",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "for ( ; ; ) loop for long async tasks",
   "homepage": "https://github.com/palanik",
   "keywords": [
     "forloop",
     "for",
     "loop",
-    "async"
+    "async",
+    "block",
+    "iterate",
+    "event"
   ],
   "author": "N. Palani Kumanan",
   "contributors": [
@@ -19,15 +22,19 @@
   },
   "license": "MIT",
   "publishConfig": {
-    "registry" : "https://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org"
   },
   "dependencies": {},
   "devDependencies": {
+    "blocked": "1.1.0",
+    "mocha": "2.1.0",
+    "supertest": "0.15.0"
   },
   "scripts": {
+    "test": "mocha --reporter spec"
   },
   "main": "index",
   "engines": {
-    "node": ">= 0.4.0"
+    "node": ">= 0.8.0"
   }
 }
