@@ -31,7 +31,7 @@
     "supertest": "0.15.0"
   },
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec --timeout 25000"
   },
   "main": "index",
   "engines": {
