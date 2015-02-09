@@ -12,7 +12,7 @@ Node.js is an asynchronous event driven framework for the V8 JavaScript engine. 
 ### What is wrong with vanilla for loop?
 Nothing. 
 
-This library tackles the use case where CPU-intesive code block is executed repetitively inside a loop.
+This library tackles the use case where CPU-intensive code block is executed repetitively inside a loop.
 
 ## Installation
 ```
@@ -41,7 +41,7 @@ var count = 10000000;
 var φ = 0;
 
 for (var i = 0; i < count; i++) {
-	φ = Math.sqrt(φ + Math.sqrt(1));
+    φ = Math.sqrt(φ + Math.sqrt(1));
 }
 
 console.log("φ = %d", φ);
@@ -54,12 +54,12 @@ var count = 10000000;
 var φ = 0;
 
 forloop(0, count, 1,
-		function(i) {
-			φ = Math.sqrt(φ + Math.sqrt(1));
-		},
-		function() {
-			console.log("φ = %d", φ);
-		}
+        function(i) {
+            φ = Math.sqrt(φ + Math.sqrt(1));
+        },
+        function() {
+            console.log("φ = %d", φ);
+        }
 );
 ```
 
