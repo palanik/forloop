@@ -2,16 +2,16 @@ var blocked = require('blocked');
   
 var count = 10000000;
 
-var golden = function(n) {
-	return Math.sqrt(n + Math.sqrt(1));
+var golden = function(φ) {
+	return Math.sqrt(φ + Math.sqrt(1));
 };
 
 setTimeout(function() {
-		var n = 0;
+		var φ = 0;
 		for (var i = 0; i < count; i++) {
-			n = golden(n);
+			φ = golden(φ);
 		}
-		console.log("Done! %j", n);
+		console.log("φ = %d", φ);
 	},
 	1000);
 

@@ -3,22 +3,20 @@ var blocked = require('blocked')
   
 var count = 10000000;
 
-var golden = function(n) {
-	return Math.sqrt(n + Math.sqrt(1));
+var golden = function(φ) {
+	return Math.sqrt(φ + Math.sqrt(1));
 };
 
 setTimeout(function() {
-		var n = 0;
-		forloop(0,
-			count,
-			100,
+		var φ = 0;
+		forloop(0, count, 100,
 			function(i) {
 				for (var j = 0; j < 100; j++) {
-				n = golden(n);
+					φ = golden(φ);
 				}
 			},
 			function() {
-				console.log("Done! %j", n);
+				console.log("φ = %d", φ);
 			}
         	);
 	},
