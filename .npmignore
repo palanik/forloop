@@ -2,7 +2,7 @@
 docs/
 examples/
 node_modules/
-test/
+test.js
 .DS_Store
 Makefile
 .travis.yml
