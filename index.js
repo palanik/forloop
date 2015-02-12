@@ -8,6 +8,13 @@ function forloop(start, end, inc, iterator, callback) {
     return (idx >= end);
   };
 
+  if (typeof(inc) == 'function') {
+    // inc missing, shift args to right
+    callback = iterator;
+    iterator = inc;
+    inc = 1;
+  }
+
   // decrements
   if (inc < 0) {
     check = function() {
@@ -37,4 +44,4 @@ function forloop(start, end, inc, iterator, callback) {
 }
 
 module.exports = forloop;
-module.exports.version = '0.0.1';
+module.exports.version = '0.0.2';
