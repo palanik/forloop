@@ -16,7 +16,7 @@ setTimeout(function() {
 				}
 			},
 			function() {
-				console.log("φ = %d", φ);
+				console.log("φ ≈ %d", φ);
 			}
         	);
 	},

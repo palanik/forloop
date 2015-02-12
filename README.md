@@ -44,7 +44,7 @@ for (var i = 0; i < count; i++) {
     φ = Math.sqrt(φ + Math.sqrt(1));
 }
 
-console.log("φ = %d", φ);
+console.log("φ ≈ %d", φ);
 ```
 
 ### Good
@@ -58,7 +58,7 @@ forloop(0, count, 1,
             φ = Math.sqrt(φ + Math.sqrt(1));
         },
         function() {
-            console.log("φ = %d", φ);
+            console.log("φ ≈ %d", φ);
         }
 );
 ```

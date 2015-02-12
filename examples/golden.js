@@ -14,7 +14,7 @@ setTimeout(function() {
 				φ = golden(φ);
 			},
 			function() {
-				console.log("φ = %d", φ);
+				console.log("φ ≈ %d", φ);
 			}
         	);
 	},
